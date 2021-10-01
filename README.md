@@ -13,3 +13,6 @@ Drag and drop list items from a list of incomplete taks to a list of completed t
    - [Element.firstElementChild](https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild)
    - [Element.insertAdjacentElement](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement)
    
+## Credits
+
+This is a practice project by Maximilian Schwarzmüller where in he builds this project using typescript from scratch to demonstrate the use typescript to build real world applications.
