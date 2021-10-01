@@ -9,6 +9,7 @@ class ProjectInput {
         
         const importNode = document.importNode(this.templateElement.content,true);
         this.element = importNode.firstElementChild as HTMLFormElement;
+        this.element.id = 'user-input';
         this.attach();
     }
 
