@@ -15,4 +15,4 @@ Drag and drop list items from a list of incomplete taks to a list of completed t
    
 ## Credits
 
-This is a practice project by Maximilian Schwarzmüller where in he builds this project using typescript from scratch to demonstrate the use typescript to build real world applications.
+This is a practice project by Maximilian Schwarzmüller where in he builds this project using typescript from scratch to demonstrate the use of typescript to build real world applications.
