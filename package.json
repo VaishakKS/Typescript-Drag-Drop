@@ -1,0 +1,24 @@
+{
+  "name": "typescript-drag-drop",
+  "version": "1.0.0",
+  "description": "Drag and drop list items from a list of incomplete taks to a list of completed taks.",
+  "main": "dist/app.js",
+  "dependencies": {
+    "typescript": "^4.4.3",
+    "webpack": "^5.56.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaishakKS/Typescript-Drag-Drop.git"
+  },
+  "author": "vaishakmnglr@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaishakKS/Typescript-Drag-Drop/issues"
+  },
+  "homepage": "https://github.com/VaishakKS/Typescript-Drag-Drop#readme"
+}
