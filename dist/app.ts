@@ -51,10 +51,35 @@ class ProjectInput {
         this.attach();
     }
 
+    private gatherUserInput(): [string,string,number] | void{
+        const gatherTitleValue = this.titleInputElement.value;
+        const gatherDescriptionValue = this.descriptionInputElement.value;
+        const gatherPeopleValue = this.peopleInputElement.value;
+
+        console.log(gatherTitleValue,gatherDescriptionValue);
+
+        if(gatherTitleValue.length === 0 || gatherDescriptionValue.length === 0 || gatherPeopleValue.length === 0) {
+            alert("Enter all the fields");
+            return;
+        } else {
+            return [gatherTitleValue,gatherDescriptionValue,+gatherPeopleValue]
+        }
+    }
+
+    private clearInputs(){
+        this.titleInputElement.value = '';
+        this.descriptionInputElement.value = '';
+        this.peopleInputElement.value = '';
+    }
+
     @autobind
     private submitHandler(event: Event) {
         event.preventDefault();
-        console.log(this.titleInputElement.value);
+        const userInput = this.gatherUserInput();
+        if(userInput) {
+            console.log(userInput);
+            this.clearInputs();
+        }
     }
 
     private configure() {

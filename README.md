@@ -19,6 +19,10 @@ Drag and drop list items from a list of incomplete taks to a list of completed t
 
   DOM Element selection method: [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
 
+### Day 3:
+  Method descriptors: [method-decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#method-decorators)<br>
+  Use of underscores(_) in typescript: [underscore-variable](https://stackoverflow.com/questions/41085189/using-underscore-variable-with-arrow-functions-in-es6-typescript)
+
    
 ## Credits
 
