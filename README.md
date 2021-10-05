@@ -23,6 +23,9 @@ Drag and drop list items from a list of incomplete taks to a list of completed t
   Method descriptors: [method-decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#method-decorators)<br>
   Use of underscores(_) in typescript: [underscore-variable](https://stackoverflow.com/questions/41085189/using-underscore-variable-with-arrow-functions-in-es6-typescript)
 
+### Day 4:
+  Optional parameters: [optional-parameters-ts](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters)
+
    
 ## Credits
 
