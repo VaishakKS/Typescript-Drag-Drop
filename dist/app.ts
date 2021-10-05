@@ -1,3 +1,32 @@
+//Validation function 
+interface Validation {
+    value: string|number;
+    required?: boolean;
+    minLength?:number;
+    maxLength?: number;
+    min?:number;
+    max?:number;
+}
+
+function validate(validatableInput: Validation) {
+    let isValid = true;
+    if(validatableInput.required) {
+        isValid = isValid && validatableInput.value.toString().trim().length !== 0;
+    }
+    if(validatableInput.minLength !=null && typeof validatableInput.value === 'string') {
+        isValid = isValid && validatableInput.value.length >= validatableInput.minLength;
+    }
+    if(validatableInput.maxLength !=null && typeof validatableInput.value === 'string') {
+        isValid = isValid && validatableInput.value.length <= validatableInput.maxLength;
+    }
+    if(validatableInput.min !=null && typeof validatableInput.value === 'number') {
+        isValid = isValid && validatableInput.value >= validatableInput.min;
+    }
+    if(validatableInput.max !=null && typeof validatableInput.value === 'number') {
+        isValid = isValid && validatableInput.value <= validatableInput.max;
+    }
+    return isValid;
+}
 // autobind decorator
 function autobind(
     _: any,
@@ -56,9 +85,22 @@ class ProjectInput {
         const gatherDescriptionValue = this.descriptionInputElement.value;
         const gatherPeopleValue = this.peopleInputElement.value;
 
-        console.log(gatherTitleValue,gatherDescriptionValue);
+        const titleValidatable = {
+            value: gatherTitleValue,
+            required:true
+        }
+        const descriptionValidatable = {
+            value: gatherDescriptionValue,
+            required:true
+        }
+        const peopleValidatable = {
+            value: gatherPeopleValue,
+            required:true,
+            min:1,
+            max:5
+        }
 
-        if(gatherTitleValue.length === 0 || gatherDescriptionValue.length === 0 || gatherPeopleValue.length === 0) {
+        if(!validate(titleValidatable) || !validate(descriptionValidatable) || !validate(peopleValidatable)) {
             alert("Enter all the fields");
             return;
         } else {
