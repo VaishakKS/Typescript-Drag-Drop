@@ -52,7 +52,7 @@ class ProjectList {
 
     constructor(private type: 'active' | 'finished') {
         this.templateElement = document.getElementById(
-            'project-input'
+            'project-list'
         )! as HTMLTemplateElement;
         this.hostElement = document.getElementById('app')! as HTMLDivElement;
 
