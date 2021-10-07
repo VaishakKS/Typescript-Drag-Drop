@@ -26,6 +26,15 @@ Drag and drop list items from a list of incomplete taks to a list of completed t
 ### Day 4:
   Optional parameters: [optional-parameters-ts](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters)
 
+### Day 5:
+  DOM Element selection method: 
+  - [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+  - [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+
+  Interfaces: [HTMLUListElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUListElement)
+
+  Singletons and Private Constructors: [VaishakKS/TypeScript-Notes/Classes-Interfaces/Private-Constructors](https://github.com/VaishakKS/TypeScript-Notes/blob/main/Classes-Interfaces/Private-Constructors/README.md)
+
    
 ## Credits
 
